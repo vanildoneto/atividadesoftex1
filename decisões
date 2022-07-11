@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+   
+   int quantidade_de_rodas;
+   float peso_bruto;
+   int quantidade_veiculos;
+   
+   printf("Digite a quantidade de rodas do veículo: ");
+   scanf("%d", &quantidade_de_rodas);
+   
+   printf("Digite o peso bruto do veículo: ");
+   scanf("%f", &peso_bruto);
+   
+   printf("Digite a quantidade de pessoas no veículo: ");
+   scanf("%d", &quantidade_veiculos);
+   
+   if(quantidade_de_rodas >= 2 && quantidade_de_rodas <= 3 && peso_bruto == 0 && quantidade_veiculos == 0){
+   printf("\nA categoria para a habilitação é: A \n ");
+   }else{
+       printf("\n");
+   }
+   
+   if(quantidade_de_rodas == 4 &&  peso_bruto <= 3500 && quantidade_veiculos <= 8 && quantidade_veiculos >0 && peso_bruto > 0){
+       printf("\nA categoria para a habilitação é: B \n");
+   }else{
+       printf("\n");
+   }
+   
+   if(quantidade_de_rodas >= 4 && peso_bruto >= 3500 && peso_bruto <= 6000 && quantidade_veiculos == 0){
+       printf("\nA categoria para a habilitação é: C \n");
+   }else{
+       printf("\n");
+   }
+   
+  if(quantidade_de_rodas >= 4 && quantidade_veiculos >= 8 && peso_bruto == 0){
+      printf("\nA categoria para a habilitação é: D \n");
+   }else{
+       printf("\n");
+   }
+   
+  if(quantidade_de_rodas >= 4 && peso_bruto >= 6000 && quantidade_veiculos == 0){
+      printf("\nA categoria para a habilitação é: E \n");
+      
+  }else{
+     printf("\n"); 
+  }
+  if(quantidade_de_rodas !=0 && peso_bruto !=0 && quantidade_veiculos !=0){
+      printf("CATEGORIA INEXISTENTE!");
+ }
+  
+  
+  
+}
